@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ORDERIT</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Arya:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link href="./css/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="./css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./css/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./css/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./css/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+  <!-- Main Stylesheet File -->
+  <link href="./css/style.css" rel="stylesheet">
+<style>
+    #header{
+        background: #d4b3b3d1;
+        -moz-box-shadow: 3px 3px 5px 6px #50484842;
+    -webkit-box-shadow: 3px 3px 5px 6px #50484842;
+    box-shadow: 3px 3px 5px 6px #50484842;
+    height: 120px;
+    }
+</style>
+
+</head>
+ <body>
+<!--<div class="cart">
+
+    <a href="#"><span style="position: absolute;background: #FFA500;padding: 5px;border-radius: 50%;font-size: 15px;margin-top: -23px;margin-left: 15px;" class="total-count"></span><i class="fa fa-shopping-cart"></i></a>
+  </div>-->
+  <div class="optionfour wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-instagram"></i></a>
+  </div>
+  <div class="optionthree wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-facebook"></i></a>
+  </div>
+  <div class="optiontwo wow bounceIn" id="phone" style="display: none;">
+    <a href=" "><i class="fa fa-whatsapp"></i></a>
+  </div>
+<div class="optionone wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-phone"></i></a>
+  </div>
+   <!-- <div class="optionminus" id="option" style="display: none;">
+    <i class="fa fa-minus"></i>
+  </div>
+  <div class="option" id="option"  style="display: block;">
+    <i class="fa fa-plus" ></i>
+  </div> -->
+
+<!-- 
+<div class="cart top-left-cart" id="option"><a href="#" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i></a></div>
+<span class="cartval total-count"></span>
+ -->
+ <div class="cartmain">
+ 
+    <div class="left-cart">
+      <div class="cartcount">
+        <span class="total-count"></span>
+      </div>
+      <a href="#" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i> </a>
+    </div>
+  </div>
+<!-- Button trigger modal -->
+<!-- Modal signup -->
+<div class="modal fade" id="exampleModalSignup" tabindex="-1" aria-labelledby="exampleModalLabelSignup" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelSignup">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <form action="" class="signupForm">
+       
+          <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+          <input type="text" name="name" id="name" placeholder="Email" required/>
+          <label id="icon" for="name"><i class="fas fa-user"></i></label>
+          <input type="text" name="name" id="name" placeholder="Name" required/>
+          <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+          <input type="password" name="name" id="name" placeholder="Password" required/>
+          <hr>
+          <hr>
+          <div class="btn-block">
+            <p>By clicking Register, you agree on our <a href="">Privacy Policy for &copy;ORDERIT</a>.</p>
+            <button type="submit" href="/">Submit</button>
+          </div>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal login -->
+  <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabelLogin" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelLogin">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <form action="" class="signupForm">
+    
+          <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
+          <input type="text" name="name" id="email" placeholder="Email" required/>
+          <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+          <input type="password" name="name" id="name" placeholder="Password" required/>
+          <hr>
+          <hr>
+          <div class="btn-block">
+            <button type="login" href="/">Login</button>
+          </div>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModalSignup" tabindex="-1" aria-labelledby="exampleModalLabelSignup" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelSignup">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="cart1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+
+    <div class="modal-content" style="border-radius: 15px;">
+      <div class="modal-header">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-4 col" >
+             
+           </div>
+           <div class="col-md-4 col" > 
+           <img src="img/logo.png" alt="logo" class="img-fluid" ></div>
+           <div class="col-md-4 col">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+           </div>
+         </div>
+       </div>
+      </div>
+
+      <div class="modal-body p-2">
+        <div class="desk">
+      <center>
+        <p> Please pay for your order by scanning QR code in you favorite UPI app. Your order will be processed after payment verification.</p>
+      <img src="img/qr.jpg" class="img-fluid" style="height:200px;" >
+
+      <div class="icoo p-2" >
+        <img src="img/ico/ppe.png" class="img-fluid">
+        <img src="img/ico/gpay.png" class="img-fluid">
+        <img src="img/ico/paytm.png" class="img-fluid">
+        <img src="img/ico/apay.png" class="img-fluid">
+      </div>
+
+      <p> Scan QR code and pay the amount then click on Confirm</p>
+      <div class="ml-4 mr-4 mb-4" style="margin-top: -10px;"><a href=""><button type="button" class="btn btnn">Confirm</button></a></div>
+
+    </center>
+     </div>
+        <div class="mob">
+      <center>
+        <p> Please pay for your order by button given below with your favorite UPI app. Your order will be processed after payment verification.</p>
+
+      <div class="icoo">
+        <img src="img/ico/ppe.png" class="img-fluid">
+        <img src="img/ico/gpay.png" class="img-fluid">
+        <img src="img/ico/paytm.png" class="img-fluid">
+        <img src="img/ico/apay.png" class="img-fluid">
+      </div>
+
+      <p class="mt-5" > After sucessfull payment click on Confirm to place an order.</p>
+     
+    </center>
+     </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+
+    <div class="modal-content" style="border-radius: 15px;">
+      <div class="modal-header">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-4 col" >
+           <h5 class="modal-title text-center float-left" id="exampleModalLabel" style="text-align: center;">Cart</h5>
+             
+           </div>
+           <div class="col-md-4 col" > 
+           <img src="img/logo.png" alt="logo" class="img-fluid" ></div>
+           <div class="col-md-4 col">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         
+        </button>
+           </div>
+         </div>
+       </div>
+      </div>
+ 
+      <div class="modal-body">
+       
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: <i class="fa fa-inr"></i><span class="total-cart"></span></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnn" id="show">Checkout</button>
+      </div>
+
+      <div class=" p-4" id="hidmod" style="display: none;">
+        <b><i class="fa fa-map-marker mr-3 mb-4"></i>Delivery Details</b><br>
+        <form method="POST" action="">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Name" required />
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="phone" class="form-control" id="name" placeholder="Conatact Number" required />
+        </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="email" name="email" class="form-control" id="name" placeholder="Email ID" required />
+        </div>
+          </div>
+        </div>
+        <div class="form-group">
+              <textarea class="form-control" name="address" rows="5" placeholder="Delivery Address"  required></textarea>
+            </div>
+             <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="city" class="form-control" id="name" placeholder="City" required />
+        </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="pin" class="form-control" id="name" placeholder="Pin Code" required />
+        </div>
+        </div>
+        </div>
+        <b><i class="fa fa-rupee mt-4 mr-3"></i>Payment Details</b><br>
+        <input type="radio" name="pay" value="Cash On Delivery" class="mt-4 mr-2">Cash On Delivery
+        <input type="radio" name="pay" id="upi" value="UPI" class="mt-4 ml-4 mr-2">UPI<br>
+        <input type="submit" name="submit" value="Place Order" class="btn btnn mt-3" id="show">
+      </form>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div> 
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+         <a href="index.html"><img src="img/logo.png" alt="" title="" class="img-fluid logo" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalLogin">Login</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalSignup">Sign Up</a></li>
+          
+          </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+ 
+
+
+  <main id="main">
+
+    <div>
+        <div class="full-overlay">
+          <div class="image-overlay">
+        <div class="content">
+        
+        </div>
+        </div>
+      </div>
+      <section id="portfolio">
+         <header class="section-header"  style="position: relative;z-index: 10;">
+                <h3>Menu</h3>
+          </header>
+          <div class="container-fluid">
+              <div class="row">
+        
+                  <div class="container">
+                  <div class="accordion" id="accordionExample1>">
+                    <div class="card">
+                    <center>
+                      <div class="card-header text-center" id="headingOne1>">
+                        <h2 class="mb-0">
+                       
+                            <button class="btn btn-link btn-block text-left" type="button" aria-expanded="flase" data-toggle="collapse" data-target="#collapseOne1>" aria-controls="collapseOne1>" style="color: #000;font-weight: 700;">
+      
+               Item List
+      
+                          </button>
+                     
+                        </h2>
+                      </div>
+                      </center>
+               
+                      <div id="collapseOne1>" class="collapse show" aria-labelledby="headingOne1>" data-parent="#accordionExample1>">
+                   
+                  
+                      
+                        <div class="card-body">
+                        <div class="menu">
+                     
+                             <div class="table-responsive">
+                            <table class="table table-hover mytable">
+                              <thead>
+                                <tr>
+                                  <th scope="col" style="width: 40%;">Name</th>
+                                  <th scope="col" style="width: 20%;">Price</th>
+                                  <th scope="col" style="width: 40%;text-align: center;">Add To Cart</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  
+               
+                          <form action="" method="POST">
+                          <tr>
+                              <input type="text" value="2" name="id" class="textt" hidden>
+                              <td style="vertical-align: middle;"><input type="text" value="" name="product" class="textt" hidden>Burger</td>
+                              <td style="vertical-align: middle;"><input type="text" value="" name="price" class="textt" hidden><i class="fa fa-rupee mr-3">130</i></td>
+                              <td style="vertical-align: middle;text-align: center;">
+                     <a href="#" data-name="Burger" data-price="130" class="add-to-cart"><input type="submit" name="addi" class="btn" value="ADD" onclick=" " style="color: #fff;background: #fe3859;padding-left: 23px;padding-right: 23px;" ></a>
+                              
+                               
+                       <!-- <input type="submit" class="btn rem" name="dle" value="Remove" onclick=""> -->
+                  
+                              </td>
+      
+                            </tr>
+                            <tr>
+                                <input type="text" value="2" name="id" class="textt" hidden>
+                                <td style="vertical-align: middle;"><input type="text" value="" name="product" class="textt" hidden>Pizza</td>
+                                <td style="vertical-align: middle;"><input type="text" value="" name="price" class="textt" hidden><i class="fa fa-rupee mr-3">330</i></td>
+                                <td style="vertical-align: middle;text-align: center;">
+                       <a href="#" data-name="Pizza" data-price="330" class="add-to-cart"><input type="submit" name="addi" class="btn" value="ADD" onclick=" " style="color: #fff;background: #fe3859;padding-left: 23px;padding-right: 23px;" ></a>
+                                
+                                 
+                         <!-- <input type="submit" class="btn rem" name="dle" value="Remove" onclick=""> -->
+                    
+                                </td>
+        
+                              </tr>
+                              <tr>
+                                <input type="text" value="2" name="id" class="textt" hidden>
+                                <td style="vertical-align: middle;"><input type="text" value="" name="product" class="textt" hidden>Pasta</td>
+                                <td style="vertical-align: middle;"><input type="text" value="" name="price" class="textt" hidden><i class="fa fa-rupee mr-3">180</i></td>
+                                <td style="vertical-align: middle;text-align: center;">
+                       <a href="#" data-name="Pasta" data-price="180" class="add-to-cart"><input type="submit" name="addi" class="btn" value="ADD" onclick=" " style="color: #fff;background: #fe3859;padding-left: 23px;padding-right: 23px;" ></a>
+                                
+                                 
+                         <!-- <input type="submit" class="btn rem" name="dle" value="Remove" onclick=""> -->
+                    
+                                </td>
+        
+                              </tr>
+                            </form>
+                              </tbody>
+                              </table>
+                              </div>
+                       
+                            
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+    </main>
+  
+    <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+    <center>
+    <h6 style="color: #fff;padding-top: 60px;">orderit &copy; 2022 </h6>
+    <a href=""><i class="fa fa-google footsocial"></i></a>
+    <a href=""><i class="fa fa-instagram footsocial"></i></a>
+    <a href=""><i class="fa fa-facebook footsocial"></i></a>
+    </footer>
+    <!-- #footer -->
+  
+  
+    <!-- JavaScript Libraries -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./css/lib/jquery/jquery.min.js"></script>
+    <script src="./css/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="./css/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./css/lib/easing/easing.min.js"></script>
+    <script src="./css/lib/superfish/hoverIntent.js"></script>
+    <script src="./css/lib/superfish/superfish.min.js"></script>
+    <script src="./css/lib/wow/wow.min.js"></script>
+    <script src="./css/lib/waypoints/waypoints.min.js"></script>
+    <script src="./css/lib/counterup/counterup.min.js"></script>
+    <script src="./css/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./css/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./css/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="./css/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  
+    <script src="./js/main.js"></script>
+    <script>
+  
+
+  
+  
+
+
+
+   </script>
+  </body>
+  </html>
+  

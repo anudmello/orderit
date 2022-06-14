@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ORDERIT</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Arya:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link href="./css/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+  <link href="./css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./css/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./css/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+  <!-- Main Stylesheet File -->
+  <link href="./css/style.css" rel="stylesheet">
+<script>
+
+</script>
+
+</head>
+ <body>
+<!--<div class="cart">
+
+    <a href="#"><span style="position: absolute;background: #FFA500;padding: 5px;border-radius: 50%;font-size: 15px;margin-top: -23px;margin-left: 15px;" class="total-count"></span><i class="fa fa-shopping-cart"></i></a>
+  </div>-->
+  <div class="optionfour wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-instagram"></i></a>
+  </div>
+  <div class="optionthree wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-facebook"></i></a>
+  </div>
+  <div class="optiontwo wow bounceIn" id="phone" style="display: none;">
+    <a href=" "><i class="fa fa-whatsapp"></i></a>
+  </div>
+<div class="optionone wow bounceIn" id="phone" style="display: none;">
+    <a href=""><i class="fa fa-phone"></i></a>
+  </div>
+   <!-- <div class="optionminus" id="option" style="display: none;">
+    <i class="fa fa-minus"></i>
+  </div>
+  <div class="option" id="option"  style="display: block;">
+    <i class="fa fa-plus" ></i>
+  </div> -->
+
+<!-- 
+<div class="cart top-left-cart" id="option"><a href="#" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i></a></div>
+<span class="cartval total-count"></span>
+ -->
+<div class="cartmain">
+ 
+  <div class="left-cart">
+    <div class="cartcount">
+      <span class="total-count"></span>
+    </div>
+    <a href="#" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i> </a>
+  </div>
+</div>
+<!-- Modal signup -->
+<div class="modal fade" id="exampleModalSignup" tabindex="-1" aria-labelledby="exampleModalLabelSignup" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelSignup">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="" class="signupForm">
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="name" placeholder="Email" required/>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Name" required/>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="name" placeholder="Password" required/>
+        <hr>
+        <hr>
+        <div class="btn-block">
+          <p>By clicking Register, you agree on our <a href="">Privacy Policy for &copy;ORDERIT</a>.</p>
+          <button type="submit" href="/">Submit</button>
+        </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal login -->
+<div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabelLogin" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelLogin">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="" class="signupForm">
+
+        <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="email" id="email" placeholder="Email" required/>
+        <label id="icon" for="pass"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="password" id="pass" placeholder="Password" required/>
+        <hr>
+        <hr>
+        <div class="btn-block">
+          <button type="submit" name="login" href="/">Login</button>
+        </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cart1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+
+    <div class="modal-content" style="border-radius: 15px;">
+      <div class="modal-header">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-4 col" >
+             
+           </div>
+           <div class="col-md-4 col" > 
+           <img src="img/logo.png" alt="logo" class="img-fluid" ></div>
+           <div class="col-md-4 col">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+           </div>
+         </div>
+       </div>
+      </div>
+
+      <div class="modal-body ">
+        <div class="desk">
+      <center>
+        <p> Please pay for your order by scanning QR code in you favorite UPI app. Your order will be processed after payment verification.</p>
+      <img src="./img/QR.jpeg" class="img-fluid" style="height:200px;" >
+
+      <div class="icoo p-2" >
+        <img src="./img/ppe.png" class="img-fluid">
+        <img src="./img/gpay.webp" class="img-fluid">
+        <img src="./img/pytm.png" class="img-fluid">
+        <img src="./img/apay.webp" class="img-fluid">
+      </div>
+
+      <p> Scan QR code and pay the amount then click on Confirm</p>
+      <div class="ml-4 mr-4 mb-4" style="margin-top: -10px;"><a href=""><button type="button" class="btn btnn">Confirm</button></a></div>
+
+    </center>
+     </div>
+        <div class="mob">
+      <center>
+        <p> Please pay for your order by button given below with your favorite UPI app. Your order will be processed after payment verification.</p>
+
+      <div class="icoo">
+        <img src="img/ico/ppe.png" class="img-fluid">
+        <img src="img/ico/gpay.png" class="img-fluid">
+        <img src="img/ico/paytm.png" class="img-fluid">
+        <img src="img/ico/apay.png" class="img-fluid">
+      </div>
+
+      <p class="mt-5" > After sucessfull payment click on Confirm to place an order.</p>
+     
+    </center>
+     </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+
+    <div class="modal-content" style="border-radius: 15px;">
+      <div class="modal-header">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-4 col" >
+           <h5 class="modal-title text-center float-left" id="exampleModalLabel" style="text-align: center;">Cart</h5>
+             
+           </div>
+           <div class="col-md-4 col" > 
+           <img src="img/logo.png" alt="logo" class="img-fluid" ></div>
+           <div class="col-md-4 col">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         
+        </button>
+           </div>
+         </div>
+       </div>
+      </div>
+ 
+      <div class="modal-body">
+       
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: <i class="fa fa-inr"></i><span class="total-cart"></span></div>
+        </div>
+      </div>
+
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btnn" id="show">Checkout</button>
+      </div>
+
+      <div class=" p-4" id="hidmod" style="display: none;">
+        <b><i class="fa fa-map-marker mr-3 mb-4"></i>Delivery Details</b><br>
+        <form method="POST" action="">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Name" required />
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="phone" class="form-control" id="name" placeholder="Conatact Number" required />
+        </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="email" name="email" class="form-control" id="name" placeholder="Email ID" required />
+        </div>
+          </div>
+        </div>
+        <div class="form-group">
+              <textarea class="form-control" name="address" rows="5" placeholder="Delivery Address"  required></textarea>
+            </div>
+             <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="city" class="form-control" id="name" placeholder="City" required />
+        </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+          <input type="text" name="pin" class="form-control" id="name" placeholder="Pin Code" required />
+        </div>
+        </div>
+        </div>
+        <b><i class="fa fa-rupee mt-4 mr-3"></i>Payment Details</b><br>
+        <input type="radio" name="pay" value="Cash On Delivery" class="mt-4 mr-2">Cash On Delivery
+        <input type="radio" name="pay" id="upi" value="UPI" class="mt-4 ml-4 mr-2">UPI<br>
+        <input type="submit" name="order" value="Place Order" class="btn btnn mt-3" id="show">
+      </form>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div> 
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+         <a href=""><img src="img/logo.png" alt="" title="" class="img-fluid logo" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#exampleModalLogin" id="loginTab">Login</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#exampleModalSignup">Sign Up</a></li>
+        
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url('https://img.freepik.com/free-photo/oatmeal-dryfruits-with-bird-paradise-flower-white-background_23-2147906999.jpg?w=2000');">
+          
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <center><h2 style="font-family:'Arya', sans-serif;">Be Lazy and Let's ORDERIT  </h2></center>
+                <a href="menu.html" class="btn-get-started scrollto">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item " style="background-image: url('https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27379.jpg?w=2000');"></div>          
+            <div class="carousel-container">
+              <div class="carousel-content">
+              <center> <h2 style="font-family:'Arya', sans-serif;">Be Lazy and Let's ORDERIT</h2></center>
+                <a href="menu.html" class="btn-get-started scrollto">Order Now</a>
+              </div>
+            </div>
+          </div>
+         <div class="carousel-item" style="background-image: url('https://cdn.mwallpapers.com/photos/celebrities/hd-wallpapers/simple-background-cherries-food-white-background-fruit-minimalism-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-3qq6r.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+              <center> <h2 style="font-family:'Arya', sans-serif;">Be Lazy and Let's ORDERIT</h2></center>
+                <a href="menu.html" class="btn-get-started scrollto">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+  
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>ABOUT US</h3>
+          <p style="font-family:'Arya', sans-serif;text-align: justify;">
+            Our technology platform connects customers, restaurant partners and delivery partners, serving their multiple needs. Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, book a table and make payments while dining-out at restaurants. On the other hand, we provide restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last mile delivery service.
+            
+            .</p> 
+          <br>
+          <div style="margin-top: -60px;padding-bottom: 30px;"><center><b style="color: #fe3859;">"ORDER FROM HOME"</b></center></div>
+        </header>
+        <div class="row about-cols">
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/c2.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Online Order</a></h2>
+              <p>
+                You can order all types of food as your convenience at home with all safety measures.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/c1.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Event Catering</a></h2>
+              <p>
+                We can also give service of Event Catering with different fresh Food filled with flavours.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/bg.JPG" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Seasonal Food</a></h2>
+              <p>
+               As availability of seasonal vegetables so we can made available all kind of seasonal Food.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3 style="font-family:'Arya', sans-serif;">
+Our technology platform connects customers, restaurant partners and delivery partners, serving their multiple needs. Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, book a table and make payments while dining-out at restaurants. On the other hand, we provide restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last mile delivery service.
+
+</h3>
+          <a class="cta-btn" href="">Know More</a>
+      </div>
+    </section>
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Best Seller</h3>
+          <p style="font-family:'Arya', sans-serif;text-align: justify;">We've rounded up some of the most popular—and most delicious—fast-food items that everyone should try at least once (barring food restrictions, of course). Get ready for some major drive-thru inspiration.</p></header>
+
+        <div class="row portfolio-container" id="bestseller">
+    
+<!-- 1 -->
+          <div class="col-lg-4 col-md-4 portfolio-item filter-card wow fadeInUp">
+              <div class="portfolio-wrap">
+                  <img src="https://www.thespruceeats.com/thmb/vJUFf6L4p8y9Cn_1pE9Z7Ua9uok=/3000x2001/filters:fill(auto,1)/indian-style-burger-1957599-hero-01-266103a4bb4e4ee7b5feb4da2d2e99da.jpg" class="img-fluid" alt="">
+   
+                <form action="" method="POST">
+             
+                <div class="portfolio-info">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6 p-0" >
+                      
+                        <h4 style="float: left;margin-left: 9px;"><a href="#">Burger - 130 <i class="fa fa-rupee mr-3"></i></a></h4>
+                    </div>
+                    <div class="col-6">
+                    
+                      <button type="button"  class="btn add ml-2">
+                        <a href="#"  data-name="Burger" data-price="130" class="add-to-cart">
+                          <i class="fa fa-shopping-cart" onclick=""></i>
+                        </a>
+                      </button> 
+                    
+       
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+<!-- 2 -->
+<div class="col-lg-4 col-md-4 portfolio-item filter-card wow fadeInUp">
+  <div class="portfolio-wrap">
+      <img src="https://st.depositphotos.com/1003814/5052/i/950/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg" class="img-fluid" alt="">
+
+    <form action="" method="POST">
+ 
+    <div class="portfolio-info">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 p-0" >
+          
+            <h4 style="float: left;margin-left: 9px;"><a href="#">Pizza - 330 <i class="fa fa-rupee mr-3"></i></a></h4>
+        </div>
+        <div class="col-6">
+        
+          <button type="button"  class="btn add ml-2">
+            <a href="#"  data-name="Pizza" data-price="330" class="add-to-cart">
+              <i class="fa fa-shopping-cart" onclick=""></i>
+            </a>
+          </button> 
+        
+
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  </div>
+</div>
+<!-- 3 -->
+<div class="col-lg-4 col-md-4 portfolio-item filter-card wow fadeInUp">
+  <div class="portfolio-wrap">
+      <img src="https://www.simplyrecipes.com/thmb/fBMHARoX5g53ZlptqLt1XfPjvr0=/1800x1229/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2010__10__quick-mac-cheese-horiz-a-1800-2086266fbc1b48a28a575b793d2926fd.jpg" class="img-fluid" alt="">
+
+    <form action="" method="POST">
+ 
+    <div class="portfolio-info">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 p-0" >
+          
+            <h4 style="float: left;margin-left: 9px;"><a href="#">Pasta - 180 <i class="fa fa-rupee mr-3"></i></a></h4>
+        </div>
+        <div class="col-6">
+          <button type="button"  class="btn add ml-2">
+            <a href="#"  data-name="Pasta" data-price="180" class="add-to-cart">
+              <i class="fa fa-shopping-cart" onclick=""></i>
+            </a>
+          </button> 
+        
+
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  </div>
+</div>
+        
+            </form>
+        </div>
+        <center><a href="menu.html"><button type="button" class="btn" style="background: #fe3859;color: #fff;border-radius: 25px;">View More Menu</button></a></center>
+      </div>
+    </section>
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Just One Click And Get Order to Doorstep</h3>
+        <a class="cta-btn" href="menu.html">Order Now</a>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <h3>Rutwij Chaukhande</h3>
+            <h4><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i></h4>
+           <p style="text-align: justify;">
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="" >
+            <center>   Got the food delivered to home.<br>
+
+                Precise and quick to order. Meal was delivered 5
+                minutes before the expected delivery time.
+                Keep it up.</center>
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <h3>Yogesh Neve</h3>
+            <h4><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i></h4>
+          
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              basically liked d way of their concept of their
+              service shld spread in more areas ....
+              as dey no service at satara rd....
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <h3>Shweta Chhabria</h3>
+            <h4><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i><i class="fa fa-star" aria-hidden="true" style="color: #F8B704;"></i></h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              dial a meal is largest growing food delivery chain in pune and new mumbai. it is lightening faster than other food delivery service. when you in pune. and you feeling hungry don't forget to call dial a meal.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+      
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+    <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+  
+          <div class="section-header">
+            <h3>Contact Us</h3>
+          </div>
+  
+          <div class="row contact-info">
+  
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>Address</h3>
+                <address>Venus Heights, </address>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+91 9999999999">+91 9999999999</a></p>
+                <p><a href="tel:+91 9999999999">+91 9999999999</a></p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:orderit@gmail.com">orderit@gmail.com</a></p>
+              </div>
+            </div>
+  
+          </div>
+      <div class="container">
+            <div class="row">
+              <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+               <div class="cont">
+                <h2 class="text-center">Contact</h2>
+               
+               <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
+                </div>
+                <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"  required></textarea>
+                </div>
+                <div class="text-center"><input type="submit" value="Send Message" class="btn"  style="background: #fe3859;color: #fff;border-radius: 25px;"></div>
+                </div>
+              </div>
+              <div class="col-md-6 wow fadeInUp clp" data-wow-delay="0.2s">
+                
+                <div class="cont">
+                <h2 class="text-center">Find Us</h2>
+               
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.7577546138164!2d79.0525156269531!3d21.122221900000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c078fce11c03%3A0x4303862fe05560a9!2sDomino&#39;s%20Pizza!5e0!3m2!1sen!2sin!4v1654769281930!5m2!1sen!2sin"  width="100%" height="290" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- #contact -->
+  
+    </main>
+  
+    <footer id="footer">
+    <center>
+    <h6 style="color: #fff;padding-top: 60px;">orderit &copy; 2022 </h6>
+    <a href=""><i class="fa fa-google footsocial"></i></a>
+    <a href=""><i class="fa fa-instagram footsocial"></i></a>
+    <a href=""><i class="fa fa-facebook footsocial"></i></a>
+    </footer>
+    <!-- #footer -->
+  
+  
+    <!-- JavaScript Libraries -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./css/lib/jquery/jquery.min.js"></script>
+    <script src="./css/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="./css/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./css/lib/easing/easing.min.js"></script>
+    <script src="./css/lib/superfish/hoverIntent.js"></script>
+    <script src="./css/lib/superfish/superfish.min.js"></script>
+    <script src="./css/lib/wow/wow.min.js"></script>
+    <script src="./css/lib/waypoints/waypoints.min.js"></script>
+    <script src="./css/lib/counterup/counterup.min.js"></script>
+    <script src="./css/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./css/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./css/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  
+    <script src="./js/main.js"></script>
+    <script>
+  
+
+  
+  
+
+
+
+   </script>
+  </body>
+  </html>
+  
